@@ -510,12 +510,12 @@ class SharebookApp extends PolymerElement {
       this._setMeta('property', 'og:title', detail.title);
       this._setMeta('property', 'og:description', detail.description || document.title);
       this._setMeta('property', 'og:url', document.location.href);
-      this._setMeta('property', 'og:image', detail.image || this.baseURI + 'images/shop-icon-128.png');
+      this._setMeta('property', 'og:image', detail.image || this.baseURI + 'images/sharebookLogo.png');
       // Set twitter card metadata
       this._setMeta('property', 'twitter:title', detail.title);
       this._setMeta('property', 'twitter:description', detail.description || document.title);
       this._setMeta('property', 'twitter:url', document.location.href);
-      this._setMeta('property', 'twitter:image:src', detail.image || this.baseURI + 'images/shop-icon-128.png');
+      this._setMeta('property', 'twitter:image:src', detail.image || this.baseURI + 'images/sharebookLogo.png');
     }
   }
 
