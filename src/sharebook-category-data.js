@@ -99,7 +99,8 @@ class SharebookCategoryData extends PolymerElement {
       return;
     }
     this._getResource({
-      url: 'http://localhost:3000/' + category.name,//'data/' + category.name + '.json',
+      url: 'https://sharebook-231012.appspot.com/' + category.name,
+      //url: 'http://localhost:3000/' + category.name,
       onLoad(e) {
         this.set('category.items', JSON.parse(e.target.responseText));
       },
